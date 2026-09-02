@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="Survey.css">
+
+</head>
+
+<body>
+
+<h1>Lions Survey Form</h1>
+
+
+<form>
+    <h3>Name </h3>
+        <h6><i>required</i></h6>
+    <input type="text" id="name" name="name" placeholder="Enter your name"required><br>
+    <h3>Email </h3>
+        <h6><i>required</i></h6>
+    <input type="email" id="email" name="email" placeholder="Enter your email"required><br>
+    <h3>Choose your favorite uniform color. </h3><!-- dropdown -->
+    <h6><i>required</i></h6>
+    <select id="color" name="color" required>
+        <option value=""selected disabled hidden>Select a jersey color</option>
+        <option value="Red">Black</option>
+        <option value="Blue">Grey</option>
+        <option value="Green">White</option>
+        <option value="Yellow">Blue</option>
+        <option value="Purple">Throwback</option>
+        <option value="Orange">City edition</option>
+    </select><br>
+    <h3>Who is your favorite player?</h3> <!-- multiple choice -->
+        <h6><i>required</i></h6>
+    <input type="radio" id="Amonra" name="player" value="Amonra" required>
+    <label for="Amonra">Amonra</label><br>
+    <input type="radio" id="sophomore" name="player" value="Hutchensen">
+    <label for="Hutchensen">Hutchensen</label><br>
+    <input type="radio" id="junior" name="player" value="Goff">
+    <label for="Goff">Goff</label><br>
+    <input type="radio" id="senior" name="player" value="Gibbs">
+    <label for="Gibbs">Gibbs</label><br>
+
+    <h3> Who is your least favorite opponent ? </h3>
+        <h6><i>required</i></h6>
+    <input type="checkbox" id ="Packers" name="opponent" value="Packers" > <br>
+    <label for ="Packers">Packers</label><br>
+    <input type="checkbox" id="Bears" name="opponent" value="Bears"> <br>
+    <label for="Bears">Bears</label><br>
+    <input type="checkbox" id="Vikings" name="opponent" value="Vikings"> <br>
+    <label for="Vikings">Vikings</label><br>
+
+    <h3>What is your favorite lions play or memory?</h3>
+        <h6><i>required</i></h6>
+    <textarea id="favorite-part" name="favorite-part" placeholder="Describe your favorite memory or moment..." required></textarea><br>
+    
+    <input type="submit" value="Submit" onclick="checkForm()">
+
+    <script>
+function checkForm() {
+
+    if (document.getElementById("name").value == "" ||
+        document.getElementById("email").value == "" ||
+        document.getElementById("color").value == "" ||
+        document.getElementById("favorite-part").value == "") {
+
+    } else {
+        alert("Thank you for submitting the survey!");
+    }
+}
+</script>
+</form>
+
+
+</body>
+</html>
