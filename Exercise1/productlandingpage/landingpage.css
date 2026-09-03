@@ -1,0 +1,42 @@
+body {
+  background-color: #8741ff;
+}
+h1{
+  color: rgb(250, 250, 250);
+  text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    text-decoration: underline;
+}
+p{
+  color: rgb(250, 250, 250);
+  margin-top: 0px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 30px;
+}
+/* Container for flexboxes */
+.myflexboxRow {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create four equal entries in myflexbox */
+.myflexboxColumn {
+  flex: 15%;
+  padding: 20px;
+}
+
+/* Media query - on screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .myflexboxColumn {
+    flex: 50%;
+  }
+}
+
+/* Media query - on screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .myflexboxRow {
+    flex-direction: column;
+  }
+}
