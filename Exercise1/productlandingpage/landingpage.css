@@ -103,11 +103,7 @@ p{
   margin-right: auto;
   border-radius: 10px;
 }
-/* Container for flexboxes */
-.myflexboxRow {
-  display: flex;
-  flex-wrap: wrap;
-}
+
 
 
 /* Container for the movie flexboxes */
