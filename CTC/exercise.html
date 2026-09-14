@@ -9,29 +9,31 @@
     <script src="exercise.js"></script>
 </head>
 <body>
-    <h1>List builder</h1>
+    <h1>Mean, Median, Mode Calculator</h1>
     <div class="myflexboxRow">
         <div class="myflexboxColumn">
-            <h2>Form to obtain a word and place it in a list</h2>
+            <h2>Form to calcualte mean, median, and mode based off input</h2>
             <form name="myForm">
-                Word to list: <input type="text" name="newWord" value=""><br />
-                List 1 or 2?: <input type="number" name="newNumber" value=""><br /><br />
-                <input type="button" value="Add to list" onclick="validateANDadd()">
+                Range low: <input type="number" name="low" ><br />
+                Range high: <input type="number" name="high" ><br /><br />
+
+                New number: <input type="number" name="newNum" value=""><br />
+                <input type="button" value="Add number" onclick="validateANDadd()"><br /><br />
             </form>
         </div>
         <div class="myflexboxColumn">
-            <h2>List 1</h2>
+            <h2>Numbers</h2>
             <table id="myList1">
             </table>
             <br /> <br />
             <input type="button" value="Clear the list" onclick="clearList1()">
         </div>
         <div class="myflexboxColumn">
-            <h2>List 2</h2>
-            <table id="myList2">
-            </table>
-            <br /> <br />
-            <input type="button" value="Clear the list" onclick="clearList2()">
+            <h2>Results</h2>
+            Mean: <span id="mean"></span><br />
+            Median: <span id="median"></span><br />
+            Mode: <span id="mode"></span><br />
+
         </div>
     </div>    
 </body>
