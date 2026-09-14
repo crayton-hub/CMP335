@@ -60,24 +60,23 @@ function validateANDadd() {
 
 
     // calculate the median
-    let sortedList = [...myList1];
-    sortedList.sort(function(a, b) {
-        return a - b;
-    });
+myList1.sort(function(a, b) {
+    return a - b;
+});
 
-    let median;
+let median;
 
-    if (sortedList.length % 2 == 1) {
-        median = sortedList[Math.floor(sortedList.length / 2)];
-    } 
-    else {
-        let middle1 = sortedList[sortedList.length / 2 - 1];
-        let middle2 = sortedList[sortedList.length / 2];
+if (myList1.length % 2 == 1) {
+    median = myList1[Math.floor(myList1.length / 2)];
+} 
+else {
+    let middle1 = myList1[myList1.length / 2 - 1];
+    let middle2 = myList1[myList1.length / 2];
 
-        median = (middle1 + middle2) / 2;
-    }
+    median = (middle1 + middle2) / 2;
+}
 
-    document.getElementById("median").innerHTML = median;
+document.getElementById("median").innerHTML = median;
 
 
     //  calculate the mode
