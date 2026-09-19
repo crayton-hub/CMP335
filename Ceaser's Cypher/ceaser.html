@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 4 Exercise - Javascript Sampling</title>
+
+    <link rel="stylesheet" href="ceaser.css">
+    <script src="ceaser.js"></script>
+</head>
+<body>
+    <h1>Web Service API Consumer Example</h1>
+    <div class="myflexboxRow">
+        <div class="myflexboxColumn">
+            <h2>Obtain user information</h2>
+            <Label for="newType">All meat or meat with filter?</label>
+            <select id="newType">
+                <option value="meat">All meat</option>
+                <option value="meat-and-filler">Meat with filler</option>
+            </select><br /><br />
+            <label for="newParagraphs">How many paragraphs?</label>
+            <select id="newParagraphs">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+            </select><br /><br />
+            <label for="newEncrypt">Encrypt the data?</label>
+            <select id="newEncrypt">
+                <option value=ceaser>Caesar Cipher</option>
+                <option value=Crays>Cray's Cipher</option>
+            </select><br /><br />
+
+            <input type="button" value="Get my Bacon Ipsum!" onclick="getBaconipsum()">
+        </div>
+        <div class="myflexboxColumn">
+            <h2>Returned data in raw JSON</h2>
+            <p id="myRawData">
+            </p>
+        </div>
+        <div class="myflexboxColumn">
+            <h2>Returned data as formatted paragraphs</h2>
+            <p id="myFormattedData">
+            </p>
+        </div>
+        <div class="myflexboxColumn">
+            <h2>Returned encrypted data</h2>
+            <p id="myEncryptedData">
+            </p>
+        </div>
+    </div>    
+</body>
+</html>
