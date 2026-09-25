@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 60px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.form-section {
+    width: 25%;
+}
+
+.algorithm-section {
+    width: 25%;
+}
+
+h2 {
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+label {
+    font-size: 20px;
+}
+
+input {
+    height: 40px;
+    font-size: 20px;
+    width: 150px;
+}
+
+select {
+    height: 40px;
+    font-size: 15px;
+}
+
+/* Makes the page stack when the screen gets smaller */
+
+@media (max-width: 1000px) {
+
+    .main-container {
+        flex-wrap: wrap;
+    }
+
+    .form-section {
+        width: 100%;
+    }
+
+    .algorithm-section {
+        width: 30%;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .algorithm-section {
+        width: 100%;
+    }
+
+}
+/*bootstrap css for grid*/
+
+.themed-grid-col {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  background-color: rgba(112.520718, 44.062154, 249.437846, .15);
+  border: 1px solid rgba(112.520718, 44.062154, 249.437846, .3);
+}
+
+.themed-container {
+  padding: .75rem;
+  margin-bottom: 1.5rem;
+  background-color: rgba(112.520718, 44.062154, 249.437846, .15);
+  border: 1px solid rgba(112.520718, 44.062154, 249.437846, .3);
+}
+
+button {
+    font-size: 16px;
+    padding: 7px 12px;
+    cursor: pointer;
+}
