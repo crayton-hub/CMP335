@@ -1,0 +1,29 @@
+body {
+    background-color: #f2f7ff;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+#currentWeather {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.weather-icon {
+    font-size: 50px;
+}
+
+.forecast-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    height: 100%;
+}
+
+.forecast-icon {
+    font-size: 40px;
+}
