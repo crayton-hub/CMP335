@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Head-to-Head | College Football Station</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/head-to-head.js" defer></script>
+</head>
+<body>
+  <header><a class="brand" href="/">COLLEGE FOOTBALL STATION</a><nav><a href="/">Home</a><a href="/head-to-head.html">Head to Head</a></nav></header>
+  <main>
+    <section class="hero">
+      <div class="eyebrow">Team comparison</div>
+      <h1>HEAD TO HEAD</h1>
+      <p class="lead">Choose a season and two FBS teams to compare their season-level results.</p>
+    </section>
+    <section style="margin-top:28px" class="panel">
+      <div class="toolbar">
+        <label>Season<select id="season-select"></select></label>
+        <label>Team 1<select id="team1-select"></select></label>
+        <label>Team 2<select id="team2-select"></select></label>
+        <button id="compare-button" type="button">Compare teams</button>
+      </div>
+      <p id="compare-status" class="status">Loading available teams...</p>
+      <div id="comparison" class="cards"></div>
+    </section>
+  </main>
+  <footer>College Football Station · Local development version</footer>
+</body>
+</html>

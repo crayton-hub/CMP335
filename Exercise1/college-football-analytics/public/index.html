@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>College Football Station</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header>
+    <a class="brand" href="/">COLLEGE FOOTBALL STATION</a>
+    <nav><a href="/">Home</a><a href="/head-to-head.html">Head to Head</a><a href="#rankings">Team Rankings</a></nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="eyebrow">College football analytics</div>
+      <h1>WHY DO TEAMS WIN?</h1>
+      <p class="lead">Explore FBS team performance, compare seasons, and see how wins, scoring, defense, and point differential tell the story behind the standings.</p>
+      <div class="actions"><a class="button" href="#rankings">Explore team stats</a><a class="button secondary" href="/head-to-head.html">Compare two teams</a></div>
+      <p id="api-status" class="status">Checking local backend...</p>
+    </section>
+
+    <section id="rankings">
+      <div class="section-heading"><div><h2>Team Rankings</h2><p>Historical statistics calculated from the project's saved FBS game data.</p></div></div>
+      <div class="panel">
+        <div class="toolbar">
+          <label>Season<select id="season-select"></select></label>
+          <label>Search team<input id="team-search" type="search" placeholder="e.g. Michigan"></label>
+          <button id="refresh-button" type="button">Refresh stats</button>
+        </div>
+        <p id="table-status" class="status">Loading team statistics...</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Rank / Team</th><th>Conference</th><th>W-L</th><th>Win %</th><th>PPG</th><th>Points Allowed</th><th>Point Diff.</th></tr></thead>
+            <tbody id="team-table"><tr><td colspan="7">Loading...</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>College Football Station · Local development version</footer>
+</body>
+</html>
